@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ColorCell" rowHeight="98" id="KGk-i7-Jjw" customClass="ColorTableViewCell" customModule="PopupDemo" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="409" height="98"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <frame key="frameInset" width="409" height="97"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bCB-LJ-nGX">
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YFx-lu-lcn">
+                                <color key="backgroundColor" red="0.40000000600000002" green="0.80000001190000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="YFx-lu-lcn" secondAttribute="height" multiplier="1:1" id="dpp-dH-Bfo"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="3"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" alignment="top" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="hNZ-CE-iiA">
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zJ6-3Q-nhq" userLabel="Title">
+                                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="8" id="n2m-cO-zHC"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="3"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4U2-mo-UdZ" userLabel="Sub Title">
+                                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="8" id="Wv8-KV-SSf"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="3"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nIx-ve-pvv" userLabel="Description">
+                                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="8" id="btf-IT-oFb"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="3"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="zJ6-3Q-nhq" firstAttribute="width" secondItem="hNZ-CE-iiA" secondAttribute="width" multiplier="0.6" id="FFh-XA-gmS"/>
+                                    <constraint firstItem="nIx-ve-pvv" firstAttribute="width" secondItem="hNZ-CE-iiA" secondAttribute="width" multiplier="0.8" id="YgO-9W-tb6"/>
+                                    <constraint firstItem="4U2-mo-UdZ" firstAttribute="width" secondItem="hNZ-CE-iiA" secondAttribute="width" id="uDs-7a-yF9"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="hNZ-CE-iiA" firstAttribute="trailing" secondItem="bCB-LJ-nGX" secondAttribute="trailing" constant="-10" id="AKf-jG-G1D"/>
+                            <constraint firstItem="hNZ-CE-iiA" firstAttribute="leading" secondItem="YFx-lu-lcn" secondAttribute="trailing" constant="10" id="Nj9-O8-aXA"/>
+                            <constraint firstItem="YFx-lu-lcn" firstAttribute="leading" secondItem="bCB-LJ-nGX" secondAttribute="leading" constant="10" id="Szy-ji-Ghs"/>
+                            <constraint firstItem="YFx-lu-lcn" firstAttribute="bottom" secondItem="bCB-LJ-nGX" secondAttribute="bottom" constant="-10" id="cMa-eM-lZL"/>
+                            <constraint firstItem="YFx-lu-lcn" firstAttribute="top" secondItem="bCB-LJ-nGX" secondAttribute="top" constant="10" id="yG7-ts-Bm3"/>
+                            <constraint firstItem="hNZ-CE-iiA" firstAttribute="top" secondItem="bCB-LJ-nGX" secondAttribute="top" constant="10" id="ysr-ET-HZI"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                <integer key="value" value="2"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.shadowRadius">
+                                <integer key="value" value="3"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="NO"/>
+                            <userDefinedRuntimeAttribute type="size" keyPath="layer.shadowOffset">
+                                <size key="value" width="0.0" height="0.0"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.shadowOpacity">
+                                <real key="value" value="0.050000000000000003"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                <constraints>
+                    <constraint firstItem="bCB-LJ-nGX" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="5" id="0sY-b1-5d7"/>
+                    <constraint firstItem="bCB-LJ-nGX" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailing" constant="-5" id="BLY-tA-hQL"/>
+                    <constraint firstItem="bCB-LJ-nGX" firstAttribute="bottom" secondItem="H2p-sc-9uM" secondAttribute="bottom" constant="-5" id="rpG-qD-tgr"/>
+                    <constraint firstItem="bCB-LJ-nGX" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="5" id="um4-Ue-YSe"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <connections>
+                <outlet property="iconView" destination="YFx-lu-lcn" id="e7Y-Ci-3Qx"/>
+            </connections>
+            <point key="canvasLocation" x="69.5" y="79"/>
+        </tableViewCell>
+    </objects>
+</document>
